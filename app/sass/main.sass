@@ -1,0 +1,397 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+//======================================
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0 auto
+
+.main-holder
+	overflow: hidden
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 35px
+	position: relative
+
+.pink
+	color: #ee2b74
+//======================================
+
+.header
+	position: relative
+	width: 100%
+	min-height: 662px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: bottom
+	z-index: 2
+
+
+	.title-header
+		position: relative
+		text-align: center
+		font-family: "OpenSansHebrew-ExtraBold"
+		font-size: 22px
+		color: rgb(54, 63, 73)
+		text-transform: uppercase
+		line-height: 1.816
+		font-weight: bold
+		padding-top: 180px
+	//.bg-clouds-mobile
+	//	position: absolute
+	//	background: url(../img/background-header3-fon.png)
+	//	background-repeat: no-repeat
+	//	background-size: cover
+	//	background-position: bottom
+	//	//opacity: 0.5
+	//	width: 100%
+	//	height: 100%
+
+		//min-height: 70px
+
+
+
+//============== form section ===================
+
+.form-hold
+	background: #363f49
+	padding: 30px
+	min-height: 185px
+	width: 100%
+	position: relative
+	input, textarea
+		&::placeholder
+			color: #b9b9b9
+
+	h3
+		color: rgb(255, 255, 255)
+		text-align: center
+		font-family: "OpenSansHebrew-Regular"
+		font-size: 22px
+		line-height: 1.1
+		margin: 0 0 30px
+
+	.form
+		direction: rtl
+		max-width: 1010px
+		margin: 0 auto
+		position: relative
+		transition: opacity 0.2s ease-in-out
+
+	.form-row-wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -8px
+
+	.form-row
+		width: 25%
+		padding: 0 8px
+
+
+
+	.form-control
+		padding: 10px
+		direction: rtl
+		display: block
+		width: 100%
+		height: 55px
+		color: #b5b5b5
+		border: none
+		border-radius: 27px
+		outline: none
+		font-size: 23px
+		font-family: "OpenSansHebrew-Regular"
+		line-height: 1.2
+		text-decoration: none
+		transition: all .5s ease
+		&:hover
+			//background-color: #dad8d2
+			border: 1px solid #ee2b74
+			text-decoration: none
+			color: #111
+	//.wrap-btn
+	//	position: relative
+	//	&:after
+	//		content: ''
+	//		position: absolute
+	//		border: none
+	//		outline: 0
+	//		top: 50%
+	//		left: 37%
+	//		width: 11px
+	//		height: 11px
+	//		border-left: 2px solid white
+	//		border-top: 2px solid white
+	//		//z-index: 99999
+	//		transform: translateY(-50%) rotate(-45deg)
+	//		z-index: 99999
+
+	.btn
+		background: #ee2b74
+		font-family: "OpenSansHebrew-Regular"
+		color: white
+		text-align: center
+		height: 55px
+		border: none
+		border-radius: 27px
+		outline: none
+		display: block
+		width: 100%
+		font-size: 23px
+		text-decoration: none
+		transition: all .5s ease
+		&:hover
+			background-color: #ca346c
+			text-decoration: none
+
+
+
+//=================== about-us-section ========================
+
+.about-us-section
+	position: relative
+	background-image: url(../img/bg-second-section.png)
+	background-position: center
+	background-size: cover
+	min-height: 440px
+	text-align: center
+	.mobile
+		display: none
+	.wrap-about-us-section
+		padding: 100px 0 130px
+	h2
+		direction: rtl
+		font-family: "OpenSansHebrew-ExtraBold"
+		font-size: 50px
+		color: rgb(54, 63, 73)
+		font-weight: bold
+		line-height: 1.6
+		margin-bottom: 10px
+	.desription
+		direction: rtl
+		font-family: "OpenSansHebrew-Regular"
+		font-size: 21px
+		color: rgb(54, 63, 73)
+		line-height: 1.571
+
+
+//==================== what-are-we-doing ======================
+
+.what-are-we-doing
+	position: relative
+	width: 100%
+	min-height: 670px
+	background: white
+	background-attachment: fixed
+	padding: 50px 0 80px
+	box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.1)
+	h2
+		direction: rtl
+		text-align: center
+		font-size: 50px
+		font-family: "OpenSansHebrew-ExtraBold"
+		color: rgb(54, 63, 73)
+		font-weight: bold
+		line-height: 1.6
+		margin-bottom: 50px
+	.items
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center
+		margin: 0 -8px
+		padding: 0
+	.item
+		list-style: none
+		width: 25%
+		display: flex
+		flex-direction: column
+		padding: 0 8px
+		min-height: 150px
+		margin-bottom: 50px
+		.wrap-img
+			display: flex
+			justify-content: center
+			margin-bottom: 30px
+
+		p
+			direction: rtl
+			font-family: "OpenSansHebrew-Regular"
+			font-size: 17px
+			line-height: 1.45
+			color: rgb(54, 63, 73)
+			text-align: center
+			span
+				display: block
+				font-family: "OpenSansHebrew-ExtraBold"
+				font-size: 18px
+
+
+
+//===================== our-customers ====================
+
+.our-customers
+	position: relative
+	width: 100%
+	min-height: 767px
+	background-image: url(../img/bg-our-customers.png)
+	background-size: cover
+	background-position: center
+	padding: 80px 0
+	h2
+		text-align: center
+		font-family: "OpenSansHebrew-ExtraBold"
+		font-size: 50px
+		color: rgb(54, 63, 73)
+		font-weight: bold
+		line-height: 1.6
+		margin-bottom: 50px
+	.items
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center
+		margin: 0 -15px
+		padding: 0
+		.item
+			list-style: none
+			width: 20%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			//flex-direction: column
+			padding: 0 15px
+			//min-height: 150px
+			margin-bottom: 50px
+
+			.wrap-item
+				width: 100%
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				align-items: center
+				background: white
+				border-radius: 15px
+				box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.2)
+				min-height: 140px
+	.footer-itens
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 80px -15px 0
+		padding: 0
+		.item
+			list-style: none
+			padding: 0 15px
+			.wrap-img
+				margin-bottom: 10px
+			img
+				height: 40px
+			a
+				text-decoration: none
+				color: #555
+				font-size: 18px
+				font-family: "OpenSansHebrew-Regular"
+				cursor: pointer
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
