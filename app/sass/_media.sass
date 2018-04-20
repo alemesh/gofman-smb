@@ -3,6 +3,14 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1370px)
+    .header
+      min-height: 500px
+      .title-header
+        padding-top: 85px
+
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 
@@ -79,16 +87,21 @@
 @media only screen and (max-width : 480px)
     .header
       min-height: 271px
+      background-image: url(../img/background-header-m.png) !important
+      margin-top: 30px
       .title-header
         font-size: 14px
         padding-top: 50px
-      //.bg-clouds-mobile
-      //  display: inline-block
-      //  background-image: url(../img/bg-clouds-mobile.png)
-      //  background-repeat: no-repeat
-      //  background-size: cover
-      //  width: 100%
-      //  min-height: 70px
+      .bg-clouds-mobile
+        display: inline-block
+        position: absolute
+        top: -30px
+        right: 0
+        background-image: url(../img/bg-clouds-mobile2.png)
+        background-repeat: no-repeat
+        background-size: contain
+        width: 100%
+        min-height: 77px
     .form-hold
       h3
         font-size: 17px
@@ -136,7 +149,7 @@
           padding: 0 8px
           .wrap-item
             min-height: 90px
-            a
+            div
               display: flex
               justify-content: center
               align-items: center
@@ -155,6 +168,10 @@
           a
             font-size: 9px
 
+    .footer
+      min-height: 70px
+      ul
+        min-height: 70px
 
 
 /* Custom, iPhone Retina */

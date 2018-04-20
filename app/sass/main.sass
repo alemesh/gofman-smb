@@ -131,6 +131,7 @@ ul
 			color: #b9b9b9
 
 	h3
+		direction: rtl
 		color: rgb(255, 255, 255)
 		text-align: center
 		font-family: "OpenSansHebrew-Regular"
@@ -211,6 +212,29 @@ ul
 			background-color: #ca346c
 			text-decoration: none
 
+.success-msg
+	margin: -30px
+	direction: rtl
+	color: #fff
+	font-size: 30px
+	text-align: center
+	padding: 15px
+	position: absolute
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	opacity: 0
+	z-index: 5
+	background: rgba(0,0,0, .8)
+	visibility: hidden
+	transition: all .2s ease-in-out
+	font-family: "OpenSansHebrew-Regular"
+.success-form
+	.success-msg
+		opacity: 1
+		visibility: visible
 
 
 //=================== about-us-section ========================
@@ -280,6 +304,14 @@ ul
 			display: flex
 			justify-content: center
 			margin-bottom: 30px
+			img
+				margin: 0 0 10px
+				transition: all .5s ease
+				&:hover
+					transform: scale(.8)
+					//background-color: #fe7b84
+					text-decoration: none
+					color: #111
 
 		p
 			direction: rtl
@@ -330,7 +362,7 @@ ul
 			//flex-direction: column
 			padding: 0 15px
 			//min-height: 150px
-			margin-bottom: 50px
+			margin-bottom: 20px
 
 			.wrap-item
 				width: 100%
@@ -369,10 +401,40 @@ ul
 
 
 
+//==================== footer ============================
 
 
+.footer
+	border-top: 1px solid #555
+	position: relative
+	width: 100%
+	min-height: 100px
+
+	ul
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 -8px
+		min-height: 100px
+		padding: 0
+		li
+			list-style: none
+			padding: 0 8px
+			a
+				text-decoration: none
+				color: #363f49
+				transition: all .2s ease
+				&:hover
+					color: #ee2b74
+		img
+			height: 32px
+			padding-bottom: 3px
 
 
+		.fab
+			font-size: 30px
+			//color: #363f49
 
 
 
